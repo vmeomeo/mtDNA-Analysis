@@ -9,7 +9,6 @@ gatk ApplyBQSR -I temp/N1_S123.bam -R ref/ref.fa -O temp/N1_S1234.bam --bqsr-rec
 
 gatk HaplotypeCaller -R ref/ref.fa -I temp/N1_S1234.bam --sample-ploidy 24 --pcr-indel-model AGGRESSIVE --dbsnp ref/mtONLY_2022.vcf -O out/N1-hcall.vcf
 
-gatk VariantFiltration -R ref/ref.fa -V out/N1-hcall.vcf -O out/N28-hcallfiltered.vcf --filter-expression "QD < 2.0 || MQ < 40.0 || MQRankSum < 
--12.5 || ReadPosRankSum < -8.0" --filter-name "my_snp_filter" 
+gatk VariantFiltration -R ref/ref.fa -V out/N1-hcall.vcf -O out/N1-hcallfiltered.vcf --filter-expression "QD < 2.0 || MQ < 40.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0" --filter-name "my_snp_filter" 
 
 java -jar ../snpEff/snpEff.jar -c ../snpEff/snpEff.config -v MT out/N1-hcallfiltered.vcf > out/N1-snpeff
