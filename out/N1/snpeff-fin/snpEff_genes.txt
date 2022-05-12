@@ -1,2 +1,13 @@
 # The following table is formatted as tab separated values. 
-#GeneName	GeneId	TranscriptId	BioType
+#GeneName	GeneId	TranscriptId	BioType	variants_impact_LOW	variants_impact_MODERATE	variants_impact_MODIFIER	variants_effect_downstream_gene_variant	variants_effect_missense_variant	variants_effect_synonymous_variant	variants_effect_upstream_gene_variant
+ATP6	MIM:516060	YP_003024031.1	protein_coding	0	0	3	0	0	0	3
+ATP8	MIM:516070	YP_003024030.1	protein_coding	0	0	3	0	0	0	3
+COX1	MIM:516030	YP_003024028.1	protein_coding	0	1	3	1	1	0	2
+COX2	MIM:516040	YP_003024029.1	protein_coding	1	0	2	0	0	1	2
+COX3	MIM:516050	YP_003024032.1	protein_coding	0	0	3	0	0	0	3
+ND1	MIM:516000	YP_003024026.1	protein_coding	0	0	8	3	0	0	5
+ND2	MIM:516001	YP_003024027.1	protein_coding	1	0	7	2	0	1	5
+ND3	MIM:516002	YP_003024033.1	protein_coding	0	0	3	0	0	0	3
+ND4	MIM:516003	YP_003024035.1	protein_coding	0	0	2	0	0	0	2
+ND4L	MIM:516004	YP_003024034.1	protein_coding	0	0	3	0	0	0	3
+ND5	MIM:516005	YP_003024036.1	protein_coding	0	0	1	0	0	0	1
